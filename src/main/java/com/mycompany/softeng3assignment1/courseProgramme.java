@@ -24,7 +24,7 @@ public class courseProgramme {
         return finish;
     }
 
-    public String getModules() {
+    public module getModules() {
         return modules;
     }
 
@@ -34,14 +34,14 @@ public class courseProgramme {
 
     private final String name;
     private final DateTime finish;
-    private final String modules;
+    private final module modules;
     private final DateTime start;
     
     
-    public courseProgramme (String name, String modules, DateTime start, DateTime finish ){
+    public courseProgramme (String name, module m, DateTime start, DateTime finish ){
         
         this.name = name;
-        this.modules = modules;
+        this.modules = m;
         this.start = start;
         this.finish = finish;
         
