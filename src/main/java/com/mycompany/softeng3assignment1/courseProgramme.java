@@ -39,6 +39,10 @@ public class courseProgramme {
         listMods.add(m);
         
     }
+
+    public ArrayList<module> getListMods() {
+        return listMods;
+    }
     
     
     public courseProgramme (String name , DateTime start, DateTime finish ){

@@ -5,6 +5,9 @@
  */
 package com.mycompany.softeng3assignment1;
 
+import java.util.ArrayList;
+import org.joda.time.DateTime;
+
 /**
  *
  * @author Joseph
@@ -32,7 +35,39 @@ public class student {
     private final String name;
     private final String DOB;
    private final String username ;
+   private ArrayList<module> studentModules = new ArrayList();
+   private ArrayList<String> studentCourse = new ArrayList();
+   private ArrayList<DateTime> studentCourseSD = new ArrayList();
+   private ArrayList<DateTime> studentCourseFD = new ArrayList();
 
+   public void addModule(module m){
+        studentModules.add(m); //adds student with their module to a list
+    }
+
+    public ArrayList<module> getStudentModules() {
+        return studentModules;
+    }
+
+    public ArrayList<String> getStudentCourse() {
+        return studentCourse;
+    }
+   
+    public void addCourse(courseProgramme cp){
+        studentCourse.add(cp.getName()); //adds student with their module to a list
+        studentCourseSD.add(cp.getStart());
+        studentCourseFD.add(cp.getFinish());
+    }
+
+    public ArrayList<DateTime> getStudentCourseSD() {
+        return studentCourseSD;
+    }
+
+    public ArrayList<DateTime> getStudentCourseFD() {
+        return studentCourseFD;
+    }
+   
+   
+   
     public String getUsername() {
       
         return username;
