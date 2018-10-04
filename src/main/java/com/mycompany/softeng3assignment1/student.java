@@ -48,6 +48,8 @@ public class student {
         this.DOB = DOB;
         this. Id = Id;
         username = name + String.valueOf(age);
+        
+    
     } 
     
     

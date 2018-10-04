@@ -5,6 +5,7 @@
  */
 package com.mycompany.softeng3assignment1;
 import java.time.*;
+import java.util.ArrayList;
 import org.joda.time.DateTime;
 
 
@@ -24,9 +25,7 @@ public class courseProgramme {
         return finish;
     }
 
-    public module getModules() {
-        return modules;
-    }
+    
 
     public DateTime getStart() {
         return start;
@@ -34,14 +33,17 @@ public class courseProgramme {
 
     private final String name;
     private final DateTime finish;
-    private final module modules;
     private final DateTime start;
+    private ArrayList<module> listMods = new ArrayList();
+    public void addModules(module m){
+        listMods.add(m);
+        
+    }
     
     
-    public courseProgramme (String name, module m, DateTime start, DateTime finish ){
+    public courseProgramme (String name , DateTime start, DateTime finish ){
         
         this.name = name;
-        this.modules = m;
         this.start = start;
         this.finish = finish;
         
