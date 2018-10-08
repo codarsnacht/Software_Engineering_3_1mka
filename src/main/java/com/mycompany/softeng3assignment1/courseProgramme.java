@@ -35,11 +35,16 @@ public class courseProgramme {
     private final DateTime finish;
     private final DateTime start;
     private ArrayList<module> listMods = new ArrayList();
+    
+    
+    
     public void addModules(module m){
         listMods.add(m);
         
     }
 
+    
+    //returns list of modules
     public ArrayList<module> getListMods() {
         return listMods;
     }

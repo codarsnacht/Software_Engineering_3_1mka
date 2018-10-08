@@ -40,6 +40,8 @@ public class module {
         listStudents.add(s); //adds student with their module to a list
     }
     
+    
+    //returns list of all students in module
     public ArrayList<student> numStudentsPerModule(String name)
     {
         
