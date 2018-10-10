@@ -13,11 +13,7 @@
 		</repository>
 	</repositories>
         <dependencies>
-            
-    <dependency>
-    <groupId> com.github.codarsnacht</groupId>
-    <artifactId>Software_Engineering_3_1mka</artifactId>
-     </dependency>
+           
     
         <dependency>
             <groupId>junit</groupId>
