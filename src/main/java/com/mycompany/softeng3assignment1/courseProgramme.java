@@ -34,18 +34,18 @@ public class courseProgramme {
     private final String name;
     private final DateTime finish;
     private final DateTime start;
-    private ArrayList<module> listMods = new ArrayList();
+    private ArrayList<String> listMods = new ArrayList();
     
     
     
     public void addModules(module m){
-        listMods.add(m);
+        listMods.add(m.getModname());
         
     }
 
     
     //returns list of modules
-    public ArrayList<module> getListMods() {
+    public ArrayList<String> getListMods() {
         return listMods;
     }
     

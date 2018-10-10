@@ -23,31 +23,23 @@ public class module {
 
     private final String Modname;
     private final String id;
-    private ArrayList<student> listStudents = new ArrayList();
+    private ArrayList<String> listStudents = new ArrayList();
     
     
 
-    public ArrayList<student> getListStudents() {
+    public ArrayList<String> getListStudents() {
         return listStudents;
     }
 
-    public void setListStudents(ArrayList<student> listStudents) {
-        this.listStudents = listStudents;
-    }
+   
     
     
     public void addStudent(student s){
-        listStudents.add(s); //adds student with their module to a list
+       
+        listStudents.add(s.getName()); //adds student with their module to a list
     }
     
-    
-    //returns list of all students in module
-    public ArrayList<student> numStudentsPerModule(String name)
-    {
-        
-        return  listStudents;
-     
-    }
+   
     
     public module(String Modname, String id)
     {
