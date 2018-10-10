@@ -5,7 +5,20 @@
     <artifactId>SoftEng3Assignment1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <dependencies>
+    
+    <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+        <dependencies>
+            
+    <dependency>
+    <groupId> com.github.codarsnacht</groupId>
+    <artifactId>Software_Engineering_3_1mka</artifactId>
+     </dependency>
+    
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
