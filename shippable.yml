@@ -16,4 +16,4 @@ after_success:
 notifications:
   email:
       recipients:
-- j.gleeson6@nuigalway.ie
+-j.gleeson6@nuigalway.ie
