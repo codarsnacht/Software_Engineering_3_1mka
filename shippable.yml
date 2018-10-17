@@ -10,14 +10,3 @@ build:
 	
 after_success:
 -mvn test
-
-integrations:
-  notifications:
-    type:email
-      recipients:
-        -J.Gleeson6@nuigalway.ie
-      branches:
-        only:
-          - master
-      on_success:always 
-      on_failure:always 
