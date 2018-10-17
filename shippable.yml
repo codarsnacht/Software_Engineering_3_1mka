@@ -9,9 +9,9 @@ branches:
     - release/*
 	
 after_success:
-   - mvn clean cobertura:cobertura
-   - mvn test
+    - mvn clean cobertura:cobertura
+    - mvn test
 notifications:
   email:
-      recipients:
-- j.gleeson6@nuigalway.ie
+    recipients:
+    - j.gleeson6@nuigalway.ie
