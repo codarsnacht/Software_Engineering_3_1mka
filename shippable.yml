@@ -11,7 +11,13 @@ build:
     - mvn clean cobertura:cobertura
 after_success:
 -mvn test
-notifications:
- email:
-  recipients:
--J.Gleeson6@nuigalway.ie
+integrations:
+  notifications:
+      type: email
+      recipients:
+        -J.Gleeson6@nuigalway.ie
+      branches:
+        only:
+          - master
+      on_success: always 
+      on_failure: always 
