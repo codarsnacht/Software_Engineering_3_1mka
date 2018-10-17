@@ -1,19 +1,17 @@
-language:   java
+language: java
 
-java: 
-  - 1.8.0_101
-  - openjdk8
-
+jdk: 
+  - openjdk7
+  
 branches:
   only:
     - master
     - release/*
-
+	
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
-
 notifications:
   email:
       recipients:
--j.gleeson6@nuigalway.ie
+- j.gleeson6@nuigalway.ie
