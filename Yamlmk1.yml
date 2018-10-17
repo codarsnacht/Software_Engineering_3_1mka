@@ -2,11 +2,8 @@ language: java
  -1.8
 jdk:	
 -openjdk7
-	
 after_success:
--mvn clean 
 -mvn test
-	
 notifications:
  email:
   recipients:
